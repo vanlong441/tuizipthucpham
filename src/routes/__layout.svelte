@@ -3,6 +3,7 @@
   import Fb from "./_fb.svelte";
   import ZaloText from "./_zalo-text.svelte";
   import { DateTime } from "luxon";
+  import { goto } from "$app/navigation";
   class Instance {
     constructor({ ip, source }) {
       this.ip = ip;
@@ -14,7 +15,8 @@
   async function contact({ source }) {
     let ip = await fetch("api.json");
     ip = (await ip.json()).ip;
-    db.post(new Instance({ source: "zalo", ip }))
+    await db.post(new Instance({ source: "zalo", ip }));
+    goto("https://zalo.me/0906663532")
   }
 </script>
 
