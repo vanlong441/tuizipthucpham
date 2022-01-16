@@ -26,10 +26,6 @@
 </div>
 
 <style>
-  :global(body) {
-    background: #f5f5f5;
-    color: #222;
-  }
   .l1 {
     display: grid;
     gap: 2rem;

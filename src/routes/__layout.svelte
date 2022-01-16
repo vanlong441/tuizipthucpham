@@ -47,7 +47,9 @@
 
 <style>
   :global(body) {
-    margin: 0
+    margin: 0;
+    background: #f6f6f6;
+    color: #222;
   }
   .l1 {
     display: grid;
