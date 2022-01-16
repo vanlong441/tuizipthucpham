@@ -1,5 +1,5 @@
 <script>
-  import ShortHeader from "./_short-header.svelte";
+  import ShortHeader from "../_trang-chu/_short-header.svelte";
 </script>
 
 <div class="l0">

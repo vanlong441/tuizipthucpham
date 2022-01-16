@@ -15,20 +15,21 @@
 <div class="l1">
   <div class="l2 categories">
     {#each categories as category, categoryIndex}
-      <div class="l3">
+      <a
+        on:mouseleave={() => (index = -1)}
+        on:mouseenter={() => (index = categoryIndex)}
+        class="l3"
+        href="#"
+      >
         {#if index === categoryIndex}
           <i class="ri-logout-circle-r-line" />
         {:else}
           <i class="ri-checkbox-blank-circle-line" />
         {/if}
-        <div
-          on:mouseleave={() => (index = -1)}
-          on:mouseenter={() => (index = categoryIndex)}
-          class="text"
-        >
+        <div class="text">
           {category}
         </div>
-      </div>
+      </a>
     {/each}
   </div>
   <div class="l2 images">
@@ -55,17 +56,17 @@
     padding-right: 1rem;
   }
   .l3 {
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.75rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    background: #06ac06;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
   }
-  .text {
-    border-bottom: 1px solid transparent;
-  }
-  .l3:hover > .text {
-    border-bottom: 1px solid #222;
-    cursor: pointer;
+  .l3:hover {
+    background: rgb(50 110 110);
   }
   .images {
     display: flex;

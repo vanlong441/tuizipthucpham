@@ -29,6 +29,7 @@
     padding: 0 1rem;
     margin: 0;
     box-sizing: border-box;
+    width: 10rem;
   }
   .iconify {
     font-size: 1.5rem;

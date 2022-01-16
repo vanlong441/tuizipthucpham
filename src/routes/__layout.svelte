@@ -3,9 +3,9 @@
   import { DateTime } from "luxon";
   import { goto } from "$app/navigation";
 
-  import Nav from "./_nav.svelte";
-  import Header from "./_header.svelte";
-  import Footer from "./_footer.svelte";
+  import Nav from "./_main-layout/_nav.svelte";
+  import Header from "./_main-layout/_header.svelte";
+  import Footer from "./_main-layout/_footer.svelte";
 
   class Instance {
     constructor({ ip, source }) {

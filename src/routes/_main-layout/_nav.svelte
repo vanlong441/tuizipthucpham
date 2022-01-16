@@ -28,27 +28,27 @@
   }
   nav {
     display: flex;
-    gap: 0rem;
+    gap: 0.5rem;
     font-family: "Roboto", sans-serif;
     border-radius: 3px;
-    background: #06ac06;
-    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 9%);
   }
   a {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 9%);
+    background: #06ac06;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0.5rem;
+    padding: 0 0.75rem;
     box-sizing: border-box;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+
     /* font-weight: bold; */
     letter-spacing: 1px;
-  }
-  a:not(:last-child) {
-    border-right: 1px solid rgb(14, 148, 14);
   }
   a:hover {
     background: #098809;
