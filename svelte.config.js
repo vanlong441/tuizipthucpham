@@ -1,15 +1,12 @@
-import adapter from '@sveltejs/adapter-auto';
-import svelteMd from "vite-plugin-svelte-md";
+import adapter from "@sveltejs/adapter-auto";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  extensions: [".svelte", ".md"], // <--
   kit: {
     vite: {
-      plugins: [
-        svelteMd(), // <--
-      ],
+      plugins: [],
     },
+
     adapter: adapter(),
 
     // hydrate the <div id="svelte"> element in src/app.html

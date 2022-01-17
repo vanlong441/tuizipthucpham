@@ -3,9 +3,9 @@
   import { DateTime } from "luxon";
   import { goto } from "$app/navigation";
 
-  import Nav from "./_main-layout/_nav.svelte";
-  import Header from "./_main-layout/_header.svelte";
-  import Footer from "./_main-layout/_footer.svelte";
+  import Nav from "./_layout/nav.svelte";
+  import Header from "./_layout/header.svelte";
+  import Footer from "./_layout/footer.svelte";
 
   class Instance {
     constructor({ ip, source }) {
@@ -31,6 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
 </svelte:head>
 
 <div class="l1">
@@ -57,6 +58,7 @@
   }
   .l2 {
     max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
   }
 </style>

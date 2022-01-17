@@ -1,12 +1,12 @@
 <script>
-  import ShortHeader from "../_trang-chu/_short-header.svelte";
+  import ShortHeader from "./short-header.svelte";
 </script>
 
 <div class="l0">
   <ShortHeader text="zz" />
   <div class="l1">
     <div class="l2">
-      <img src="logo.png" alt="" />
+      <img src="/logo.png" alt="" />
       <div class="l3">
         <div class="name">Túi zip thực phẩm</div>
         <div class="description">Chuyên cung cấp sỉ và lẻ</div>
@@ -28,7 +28,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    padding: 1rem calc((100% - 1200px) / 2);
+    padding: 2rem calc((100% - 1200px) / 2);
     color: white;
     background: darkcyan;
   }
@@ -54,6 +54,7 @@
   .name {
     font-weight: bold;
     font-size: 2.25rem;
+    /* font-family: Montserrat; */
   }
   .description {
     font-size: 1.5rem;
